@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_camera"
+                android:title="@string/nav_menu_dashboard" />
+        <item
+                android:id="@+id/nav_gallery"
+                android:title="@string/nav_menu_workouts" />
+        <item
+                android:id="@+id/nav_slideshow"
+                android:title="@string/nav_menu_water_tracker" />
+        <item
+                android:id="@+id/nav_manage"
+                android:title="@string/nav_menu_my_account" />
+        <item
+                android:id="@+id/nav_logout"
+                android:title="@string/nav_menu_logout" />
+    </group>
+</menu>
