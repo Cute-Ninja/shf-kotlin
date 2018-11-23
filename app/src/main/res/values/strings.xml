@@ -9,5 +9,7 @@
     <string name="nav_menu_workouts">Workouts</string>
     <string name="nav_menu_water_tracker">Water Tracker</string>
     <string name="nav_menu_my_account">My Account</string>
-    <string name="nav_menu_logout">My Account</string>
+    <string name="nav_menu_logout">Logout</string>
+    <string name="nav_menu_about_app">About the app</string>
+    <string name="nav_menu_evaluate_app">Note the app</string>
 </resources>

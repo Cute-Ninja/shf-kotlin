@@ -1,17 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:layout_height="192dp"
+              android:layout_height="wrap_content"
               android:background="?attr/colorPrimaryDark"
               android:padding="16dp"
               android:theme="@style/ThemeOverlay.AppCompat.Dark"
               android:orientation="vertical"
               android:gravity="bottom">
 
-    <TextView
+    <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="My header title"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="4dp"
+                android:text="Lollip0ps"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="bold"
+                android:id="@+id/tv_menu_username"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"/>
+
+        <ImageView
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:id="@+id/iv_avatar"
+                android:visibility="visible"
+                android:src="@drawable/shf_avatar_test" />
+
+        <TextView
+                android:text="Gunsligner - lvl 8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_menu_class_and_level"
+                app:layout_constraintStart_toStartOf="@+id/tv_menu_username"
+                app:layout_constraintTop_toBottomOf="@+id/tv_menu_username"
+                android:layout_marginTop="4dp"/>
+
+        <TextView
+                android:text="15669 / 200000 XP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_experience"
+                app:layout_constraintTop_toBottomOf="@+id/tv_menu_class_and_level"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_menu_username"
+                android:textSize="12sp"
+                android:textStyle="italic"/>
+    </android.support.constraint.ConstraintLayout>
 
 </LinearLayout>
